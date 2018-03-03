@@ -1,0 +1,18 @@
+import Component from '@ember/component';
+
+export default Component.extend({
+  actions: {
+    showPerson(person) {
+      alert(person);
+    }
+  }
+});
+
+<h2>{{title}}</h2>
+
+<ul>
+  {{#each people as |person|}}
+    <li {{action "showPerson" person}}>{{person}}</li>
+  {{/each}}
+</ul>
+
