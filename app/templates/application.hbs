@@ -2,10 +2,4 @@
 
 {{outlet}} --}}
 
-{{input value=bearName}}
-<button {{action "addBear"}}>Add Bear</button>
-<ul>
-  {{#each bears as |bear|}}
-    <li>{{bear}}</li>
-  {{/each}}
-</ul>
+{{bear-list bears=model}}
